@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppiOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="LO0-Z6-1g3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anz-SM-XYP">
+                                <rect key="frame" x="147" y="597" width="80" height="34"/>
+                                <color key="backgroundColor" red="0.25316348645843151" green="0.24779822451503392" blue="0.25370173429319376" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Click Aqui">
+                                    <color key="titleColor" red="0.96308491490000003" green="0.96308491490000003" blue="0.96308491490000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicouBotao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfv-jb-u9k"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tipo" translatesAutoresizingMaskIntoConstraints="NO" id="DvH-Rx-MFF">
+                                <rect key="frame" x="67" y="39" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DvH-Rx-MFF" secondAttribute="trailing" constant="52" id="3I4-k2-hGW"/>
+                            <constraint firstItem="DvH-Rx-MFF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAD-6u-rvK"/>
+                            <constraint firstItem="DvH-Rx-MFF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="JIm-Gg-j6h"/>
+                            <constraint firstItem="DvH-Rx-MFF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="X9P-ni-fZ5"/>
+                            <constraint firstItem="anz-SM-XYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWf-7p-1Ag"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="anz-SM-XYP" secondAttribute="bottom" constant="36" id="nHX-pu-VWZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="LO0-Z6-1g3" id="0hB-o0-BFv"/>
+                        <outlet property="btVisible" destination="anz-SM-XYP" id="TcY-1T-tHr"/>
+                        <outlet property="tipo" destination="DvH-Rx-MFF" id="GW3-Pe-MOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="2410" height="1606"/>
+        <image name="tipo" width="182" height="64"/>
+    </resources>
+</document>
